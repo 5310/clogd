@@ -12,9 +12,8 @@ But it's good enough for me. I don't really need ping latency visualization or a
 
 Usage:
 ```sh
-./clogd.ts
+  clogd [--period=PERIOD] [--timestamp=TIMESTAMP]
 ```
-or
-```sh
-deno run --allow-net https://rawcdn.githack.com/5310/clogd/main/clogd.ts
-```
+
+- `PERIOD`: Seconds between ping attempts
+- `TIMESTAMP`: Seconds between timestamps
