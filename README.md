@@ -16,4 +16,4 @@ Usage:
 ```
 
 - `PERIOD`: Seconds between ping attempts
-- `TIMESTAMP`: Seconds between timestamps
+- `TIMESTAMP`: Minutes between timestamps
