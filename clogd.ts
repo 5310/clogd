@@ -39,7 +39,7 @@ ${date.toTimeString().slice(0, 8)} `;
     .pipeThrough(
       map((status) =>
         status
-          ? colorize("<bg-black><white>·</white></bg-black>")
+          ? colorize("<bg-black><white>-</white></bg-black>")
           : colorize("<bg-red><red>X</red></bg-red>")
       ),
     ),
