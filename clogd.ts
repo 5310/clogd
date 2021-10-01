@@ -22,8 +22,7 @@ merge(
   (() => {
     const { next, observable } = external<string>();
     const dateToTimestamp = (date: Date) => `
-    ${date.toTimeString().slice(0, 8)} 
-    `;
+${date.toTimeString().slice(0, 8)} `;
     const now = new Date();
     next(
       dateToTimestamp(now) + " ".repeat(now.valueOf() % timestamp / (period)),
