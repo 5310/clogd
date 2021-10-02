@@ -25,7 +25,7 @@ merge(
 ${date.toTimeString().slice(0, 8)} `;
     const now = new Date();
     next(
-      dateToTimestamp(now) + " ".repeat(now.valueOf() % timestamp / (period)),
+      dateToTimestamp(now) + " ".repeat(Math.ceil(now.valueOf() % timestamp / (period))),
     );
     setTimeout(() => {
       next(dateToTimestamp(new Date()));
